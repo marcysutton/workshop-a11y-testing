@@ -9,7 +9,7 @@ App URL: https://marcysutton.github.io/workshop-a11y-testing
 
 ---
 
-_Note: This repo requires [Node 12 and npm](https://nodejs.org) to be installed._
+_Note: This repo requires [Node.js 12+ and npm](https://nodejs.org) to be installed._
 
 1. Install Gatsby CLI:
 
@@ -20,27 +20,26 @@ npm install -g gatsby-cli
 1. Create a new Gatsby site using this starter
 
 ```sh
-gatsby new workshop-a11y-testing https://github.com/marcysutton/workshop-a11y-testing
+gatsby new test-a11y https://github.com/marcysutton/workshop-a11y-testing
 ```
 
 3. Go into the directory and start the development server
 
 ```sh
-cd workshop-a11y-testing
+cd test-a11y
 gatsby develop
 ```
 
-    View in a browser: http://localhost:8000
+View in a browser: `http://localhost:8000`
 
 4. Edit files:
 
-    - Site pages: [`src/pages/*`](https://github.com/marcysutton/workshop-a11y-testing/blob/master/src/pages)
-    - Site components: [`src/components/*`](https://github.com/marcysutton/workshop-a11y-testing/blob/master/src/components)
-    - Templates: [`src/templates/*`](https://github.com/marcysutton/workshop-a11y-testing/blob/master/src/templates)
-    - Integration tests and setup files: [`cypress/](https://github.com/marcysutton/workshop-a11y-testing/blog/master/cypress)
-5. To look at the answers from the exercises, check out the [`/examples`](https://github.com/marcysutton/workshop-a11y-testing/blob/master/examples) directory in the default/main branch
+    - Site pages: [`src/pages/*`](https://github.com/marcysutton/workshop-a11y-testing/tree/master/src/pages)
+    - Site components: [`src/components/*`](https://github.com/marcysutton/workshop-a11y-testing/tree/master/src/components)
+    - Component unit tests: [`src/components/__tests__`](https://github.com/marcysutton/workshop-a11y-testing/tree/master/src/components/__tests__)
+    - Templates: [`src/templates/*`](https://github.com/marcysutton/workshop-a11y-testing/tree/master/src/templates)
+    - Integration tests: [`cypress/*`](https://github.com/marcysutton/workshop-a11y-testing/tree/master/cypress)
 
-You can also check out the `solutions` branch to see everything in action: https://github.com/marcysutton/workshop-a11y-testing/tree/solutions
 
 ### Prerequisites
 1. Have a text editor installed, i.e. VS Code
