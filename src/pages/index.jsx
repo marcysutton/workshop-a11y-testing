@@ -3,7 +3,7 @@ import React from "react"
 import Layout from '../components/site-chrome/layout'
 import SEO from '../components/site-chrome/seo'
 
-import RouteTargetHeading from '../components/better/route-target-heading'
+import RouteTargetHeading from '../components/route-target-heading'
 
 const IndexPage = () => (
   <Layout>

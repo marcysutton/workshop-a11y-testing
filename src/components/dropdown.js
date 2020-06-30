@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from "react"
-import uuid from "uuid"
 
 import "./dropdown.scss"
 

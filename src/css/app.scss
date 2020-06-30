@@ -1,0 +1,408 @@
+@import './variables.scss';
+
+* {
+    box-sizing: border-box;
+}
+  html {
+    font-size: 18px; 
+  }
+  body {
+    background-color: $colorBody;
+    font-family: sans-serif;
+    line-height: 1;
+    margin: 0;
+  }
+  header[role="banner"] {
+    background-color: $bgColorContentAreas;
+    border-bottom: $widthBorder solid $colorBorders;
+    
+    .header-inner-wrap {
+      align-items: center;
+      display: flex;
+      max-width: $maxWidth;
+      margin: 0 auto;
+      
+      nav {
+        align-items: center;
+        display: flex;
+      }
+    }
+    a, a:link {
+      color: $colorLinks;
+      font-size: 0.75rem;
+      text-decoration: none;
+    }
+  }
+  #mobile-header {
+    display: none;
+  }
+  .mobile-btn-app-menu {
+    height: 20px;
+    display: none;
+    margin: 1rem;
+    width: 20px;
+  }
+  .app-nav {
+    display: flex;
+    border-right: $widthBorder solid $colorBorders;
+    padding: 1.5rem 1rem 1rem;
+    
+    h1 {
+      margin: 0;
+      
+      a {
+        text-decoration: none;
+      }
+    }
+    .dropdown {
+      margin: 0.25rem 0 0 1rem; 
+    }
+  }
+  .section-nav {
+    padding: 1.5rem 1rem 1rem;
+  }
+  .section-nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      align-self: center;
+      margin: 0;
+      padding: 0 1rem;
+      text-align: center;
+    }
+  }
+  header #notifications {
+    margin-left: auto;
+    
+    button {
+      padding: 0.75rem 0.5rem 0.25rem;
+    }
+  }
+  header #profile {
+    button {
+      padding: 0.75rem 0.5rem 0.25rem 1rem;
+    }
+  }
+  .icon {
+    // background-color: $colorBorders;
+    display: inline-block;
+    height: 10px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+    width: 10px;
+  }
+  .icon-downward-chevron {
+    &:before {
+      content: '⌄';
+      color: $colorChevrons;
+      display: block;
+      height: 10px;
+      font-size: 1rem;
+      line-height: 0.5;
+      transform: scale(2);
+    }
+  }
+  .icon-bell {
+    &:before {
+      content: '🔔';
+    }
+  }
+  .icon-button-wrap {
+    border-left: $widthBorder solid $colorBorders;
+    border-right: $widthBorder solid $colorBorders;
+    padding: 1rem;
+  }
+  .icon-button {
+    background-color: transparent;
+    border: none;
+  }
+  .dropdown {
+    display: inline-block;
+    font-size: 0.75rem;
+    line-height: 1;
+    position: relative;
+    
+    &.variant-standalone button {
+      background-color: $bgColorContentAreas;
+      border: $widthBorder solid $colorBorders;
+      border-radius: $borderRadius;
+    }
+    
+    button {
+      background-color: transparent;
+      border: none;
+      overflow: hidden;
+    }
+  }
+  .dropdown-list {
+    font-size: 0.75rem;
+    display: none;
+  }
+  main {
+    display: grid;
+    padding: 1rem;
+    max-width: $maxWidth;
+    margin: 0 auto;
+  
+    .section-header {
+      display: flex;
+  
+      h2 {
+        font-weight: 500;
+        margin: 1rem 0 0.5rem;
+      }
+  
+      .standalone-dropdown-wrap {
+        margin: 1rem 0 1rem auto;
+        
+        .dropdown:first-of-type {
+          margin-right: 1rem;
+        }
+        .dropdown button {
+          padding: 0.25rem 0.5rem;
+        }
+      }
+    }
+    article {
+      background-color: $bgColorContentAreas;
+      border: $widthBorder solid $colorBorders;
+      border-radius: $borderRadius;
+    }
+    article.primary {
+      display: grid;
+      grid-template-columns: auto 1fr;
+    }
+    .data-highlights {
+      border-right: $widthBorder solid $colorBorders;
+      display: grid;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      
+      li {
+        border-top: $widthBorder solid $colorBorders;
+        padding: 0;
+        
+        &:first-of-type {
+          border: none;
+        }
+      }
+      
+      h3 {
+        margin: 0;
+      }
+      a {
+        align-items: center;
+        display: flex;
+        padding: 1rem;
+        text-decoration: none;
+      }
+      .data-highlight-text {
+        display: block;
+        margin-right: 1rem;
+      }
+      .dh-eyebrow {
+        color: $colorLinks;
+        display: block;
+        font-size: 0.65rem;
+        text-transform: uppercase;
+      }
+      .dh-figure {
+        color: $colorLinks;
+        display: block;
+        font-weight: normal;
+        margin: 0.5rem 0 0;
+      }
+      .line-graph {
+        background-color: $colorBorders;
+        display: inline-block;
+        height: 40px;
+        margin-left: auto;
+        width: 80px;
+      }
+    }
+  }
+  .data-map-wrap {
+    display: grid;
+    grid-template-columns: 75% auto;
+    padding: 1rem;
+    
+    .data-map-key {
+      h4 {
+        font-size: 0.65rem;
+        font-weight: normal;
+        text-transform: uppercase;
+      }
+      dl {
+        font-size: 0.8rem;
+      }
+      dt {
+        margin: 0.5rem 0;
+      }
+      dd {
+        margin: 0;
+        
+        &:before {
+          background-color: $colorAccent;
+          content: '';
+          display: inline-block;
+          height: 4px;
+          margin-right: 0.5rem;
+          max-width: 80%;
+          width: 100%;
+          // width needs to be dynamically calculated for data viz
+        }
+      }
+    }
+  }
+  .secondary-tertiary-wrap {
+    display: grid;
+    margin-top: 1rem;
+    grid-template-columns: 2fr 1fr;
+  }
+  article.secondary {
+    margin-right: 1rem;
+  }
+  ul[role="tablist"] {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+    li {
+      margin: 0;
+    }
+    a {
+      color: $colorLinks;
+      display: inline-block;
+      font-size: 0.75rem;
+      padding: 1rem 0.5rem 0 1rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      
+      &[aria-selected="true"] {
+        font-weight: bold;
+      }
+    }
+  }
+  [role="tablist"] + [role="tabpanel"] {
+    margin: 1rem;
+    min-height: 200px;
+    width: auto;
+    
+    &:empty {
+      background-color: #ccc;
+    }
+  }
+  .data-table {
+    width: 100%;
+    
+    th {
+      border-bottom: $widthBorder solid $colorBorders;
+      font-size: 0.65rem;
+      font-weight: normal;
+      padding: 0 0 0.5rem;
+      text-align: left;
+      text-transform: uppercase;
+    }
+    td {
+      border-bottom: $widthBorder solid $colorBorders;
+      font-size: 0.75rem;
+      padding: 0.5rem 0.5rem 0.5rem 0;
+    }
+    td.empty {
+      color: #666;
+    }
+  }
+  nav.table-nav {
+    font-size: 0.75rem;
+    padding: 1rem 1rem 0;
+    text-align: center;
+    
+    button {
+      background-color: transparent;
+      border: none;
+      padding: 0.5rem;
+    }
+  }
+  @media screen and (max-width: $medWidth) {
+    .header-inner-wrap {
+      max-width: $medWidth;
+      
+     .section-nav li {
+        padding: 0rem 0.25rem;
+      }
+      a .icon {
+         display: none;
+      }
+    }
+    main {
+      max-width: $medWidth;
+    }
+  }
+  @media screen and (max-width: $smWidth) {
+    header[role="banner"] {
+      background-color: #557BCD;
+      
+      #mobile-header {
+        color: #fff;
+        display: block;
+        font-size: 1rem;
+        font-weight: normal;
+      }
+      .btn-app-menu {
+        display: block;
+      }
+      #app-nav {
+        display: none;
+      }
+      .dropdown button, a, a:link {
+        color: #fff;
+      }
+      #notifications, #profile {
+        border: none;
+        padding: 0;
+      }
+      .profile-text {
+        display: none;
+      }
+    }
+    .header-inner-wrap {
+      max-width: $smWidth;
+      padding-bottom: 1rem;
+    }
+    main {
+      max-width: $smWidth;
+  
+      .section-header {
+        display: none;
+      }
+    }
+    main article.primary {
+      background-color: transparent;
+      border: none;
+      display: block;
+    }
+    main .data-highlights {
+      background-color: $bgColorContentAreas;
+      border: $widthBorder solid $colorBorders;
+      border-radius: $borderRadius;
+      display: flex;
+      justify-content: center;
+      margin-top: -2rem;
+      
+      li {
+        border-left: $widthBorder solid $colorBorders;
+      }
+      .current, .line-graph {
+        display: none;
+      }
+    }
+    .secondary-tertiary-wrap,
+    .data-map-wrap {
+      display: block;
+    }
+}

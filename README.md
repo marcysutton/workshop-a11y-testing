@@ -1,6 +1,6 @@
 # Automated Accessibility Testing with Gatsby
 
-Learn the necessary techniques and tools for testing inclusive web applications with Gatsby and React.js from Gatsby's Lead Developer Relations Engineer Marcy Sutton.
+Learn to test web applications for accessibility with Gatsby and React.js from Gatsby's Lead Developer Relations Engineer Marcy Sutton.
 
 Presented at:
 - [Smashing Workshop](https://smashingconf.com/online-workshops/workshops/marcy-sutton)

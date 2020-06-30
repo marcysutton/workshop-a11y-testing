@@ -3,10 +3,9 @@ import React from "react"
 import Layout from '../components/site-chrome/layout'
 import SEO from '../components/site-chrome/seo'
 
-import RouteTargetHeading from "../components/better/route-target-heading.js"
+import RouteTargetHeading from "../components/route-target-heading.js"
 
-import BadDropdown from '../components/bad/dropdown'
-import BetterDropdown from '../components/better/dropdown'
+import Dropdown from '../components/dropdown'
 
 const DropdownPage = () => (
   <Layout>
@@ -20,21 +19,8 @@ const DropdownPage = () => (
 
       <section className="two-col">
         <div>
-          <h3>Bad link list dropdown [<a href="https://github.com/marcysutton/gatsby-a11y-workshop/blob/master/src/components/bad/dropdown.js" aria-label="inaccessible demo source">source</a>]</h3>
-          <BadDropdown activatorText="About" items={[{
-            text: 'Overview',
-            url: '#'
-          },{
-            text: 'Our team',
-            url: '#'
-          },{
-            text: 'Careers',
-            url: '#'
-          }]} />
-        </div>
-        <div>
-          <h3>Better link list dropdown</h3>
-          <BetterDropdown items={[{
+          <h3>Link list dropdown</h3>
+          <Dropdown items={[{
             text: 'Overview',
             url: '#'
           },{

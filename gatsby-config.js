@@ -4,7 +4,7 @@ module.exports = {
   siteMetadata: {
     title: `Automated Accessibility Testing with Gatsby`,
     description:
-      `Learn the necessary techniques and tools for testing inclusive web applications with Gatsby and React.js.`,
+      `Testing inclusive web applications with Gatsby and React.js`,
     author: `@marcysutton`,
   },
   pathPrefix: "/workshop-a11y-testing",
@@ -25,6 +25,14 @@ module.exports = {
         path: `${__dirname}/src/pages`
       }
     },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `content`,
+        path: `${__dirname}/src/content`,
+      },
+    },
+    `gatsby-transformer-remark`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
     {
