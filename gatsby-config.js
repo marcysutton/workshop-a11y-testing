@@ -10,6 +10,7 @@ module.exports = {
   pathPrefix: "/workshop-a11y-testing",
   plugins: [
     `gatsby-plugin-sass`,
+    `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,

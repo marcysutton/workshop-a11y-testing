@@ -1,5 +1,5 @@
 import React from "react"
-import { css } from "@emotion/core"
+import { jsx, css } from "@emotion/core"
 
 const styles = css`
     .routeSkipHeading {

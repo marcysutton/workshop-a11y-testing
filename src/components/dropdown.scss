@@ -1,7 +1,7 @@
-.wrap {
+.dropdown-wrap {
     position: relative;
 }
-.activator {
+.dropdown-activator {
     align-items: center;
     background-color: inherit;
     border: 1px solid transparent;
@@ -9,8 +9,7 @@
     color: inherit;
     display: flex;
     font-size: inherit;
-    line-height: 1;
-    max-width: 120px;
+    max-width: 160px;
     padding: 1em;
 
     &:after {
@@ -18,21 +17,21 @@
         border-bottom: 1px solid #000;
         border-right: 1px solid #000;
         height: 0.5em;
-        margin-left: auto;
+        margin-left: 0.75em;
         width: 0.5em;
         transform: rotate(45deg);
     }
 }
-.itemList {
+.dropdown-itemList {
     background-color: #ececec;
     color: black;
     display: none;
     margin: 0;
-    min-width: 120px;
+    min-width: 160px;
     padding: 0;
     position: absolute;
 
-    &> div {
+    li {
         list-style: none;
         margin: 0;
 
@@ -41,6 +40,7 @@
             padding: 0.5em;
         }
     }
+
     &.active {
         display: block;
     }

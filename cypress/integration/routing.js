@@ -4,7 +4,7 @@ describe('Routing Accessibility', () => {
         cy.focused()
           .should('not.have.class', 'routeSkipLink')
 
-        cy.get('#page-navigation').find('a').eq(0).click()
+        cy.get('#navigation').find('a').eq(1).click()
 
         cy.focused()
             .should('have.class', 'routeSkipLink')

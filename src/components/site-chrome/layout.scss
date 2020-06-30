@@ -1,3 +1,4 @@
+@import '../../css/variables.scss';
 * {
   box-sizing: inherit;
 }
@@ -20,6 +21,9 @@ body {
 
 a, a:link, a:visited {
   color: #333;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 500;
 }
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
@@ -65,8 +69,7 @@ p > code {
   }
 }
 header.globalHeader {
-  background-color: rebeccapurple;
-  color: white;
+  border-bottom: $widthBorder solid $colorBorders;
   padding: 1em;
 
   .headerIcon {
@@ -187,20 +190,24 @@ textarea {
   }
 }
 .skip-link {
+  margin: 0.25rem 0 0;
   left: 0;
   position: absolute;
   top: 0;
 
   li {
     list-style: none;
+    margin: 0;
   }
 
-  a {
+  a, a:link, a:visited {
     display: block;
     opacity: 0;
+    padding: 0.25rem;
 
     &:focus {
-      background-color: black;
+      background-color: rebeccapurple;
+      color: white;
       opacity: 1;
     }
   }

@@ -10,7 +10,7 @@ const Navigation = () => (
         </h2>
         <ul id="navigation" tabIndex="-1">
             <li><Link to="/">App Home</Link></li>
-            <li><Link to="/dropdown">Dropdown demo</Link></li>
+            <li><Link to="/demo-page">Dropdown demo</Link></li>
         </ul>
     </nav>
 )
