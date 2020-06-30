@@ -5,8 +5,6 @@ Learn to test web applications for accessibility with Gatsby and React.js from G
 Presented at:
 - [Smashing Workshop](https://smashingconf.com/online-workshops/workshops/marcy-sutton)
 
-App URL: https://marcysutton.github.io/workshop-a11y-testing
-
 ---
 
 _Note: This repo requires [Node.js 12+ and npm](https://nodejs.org) to be installed._
